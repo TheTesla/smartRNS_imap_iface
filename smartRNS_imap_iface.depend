@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1413933746 source:/home/stefan/smartRNS_imap_iface/main.cpp
+	<iostream>
+	<sstream>
+	<vector>
+	<map>
+	<vmime/vmime.hpp>
+	<vmime/platforms/posix/posixHandler.hpp>
+	<unistd.h>
+	<postgresql/libpq-fe.h>
+	<string>
+	<algorithm>
+	<fstream>
+	"DNSpgDBiface.h"
+	"imapiface.h"
+
+1413933782 source:/home/stefan/smartRNS_imap_iface/DNSpgDBiface.cpp
+	"DNSpgDBiface.h"
+
+1413485731 /home/stefan/smartRNS_imap_iface/DNSpgDBiface.h
+	<iostream>
+	<postgresql/libpq-fe.h>
+	<string>
+	<algorithm>
+	<fstream>
+
+1413486337 source:/home/stefan/smartRNS_imap_iface/imapiface.cpp
+	"imapiface.h"
+
+1413486373 /home/stefan/smartRNS_imap_iface/imapiface.h
+	<vmime/vmime.hpp>
+	<vmime/platforms/posix/posixHandler.hpp>
+	<string>
+	<iostream>
+
