@@ -45,9 +45,16 @@ void writeDBv(PGconn* conn, string cmdstr, string uristr, string contstr, string
 
 string getarg(stringstream &ss)
 {
-    string str;
-    getline(ss, str);
-    str.erase(std::remove(str.begin(), str.end(), '\r'), str.end());
+    string str, line;
+    str = "";
+    do{
+    line = "";
+        if(!getline(ss, line)) break;
+        line.erase(std::remove(line.begin(), line.end(), '\r'), line.end());
+        str += line;
+    } while('#' != line.back());
+    if('#' == str.back()) str.pop_back();
+    cout << str << endl;
     return str;
 }
 
